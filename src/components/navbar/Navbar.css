@@ -1,0 +1,40 @@
+.Navbar {
+    height: 70px;
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+    box-sizing: border-box;
+    z-index: 90;
+    margin: auto;
+}
+
+.Navbar nav {
+    height: 80%;
+}
+
+.Logo {
+    height: 80%;
+}
+
+.Logo>* {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Logo p {
+  padding-left: 30px;
+  font-size: 1.4em;
+  letter-spacing: 4px;
+  text-transform: lowercase;
+}
+
+/* desktop settings */
+@media (max-width: 799px) {
+    .DesktopOnly {
+        display: none;
+    }
+}

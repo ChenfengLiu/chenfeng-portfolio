@@ -1,0 +1,22 @@
+.footerContainer {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.icons {
+  max-width: 150px;
+  margin: auto;
+}
+
+.iconWrapper {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.icon {
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}

@@ -1,0 +1,13 @@
+.cardHeader {
+  min-height: 150px;
+  width: 100%;
+}
+
+.cardTitle {
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 1em;
+  color: #b88905;
+  letter-spacing: 2px;
+}

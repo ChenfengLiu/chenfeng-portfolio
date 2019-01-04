@@ -1,0 +1,38 @@
+.aboutBanner {
+  background-color: #e3e3e3;
+}
+.aboutPassion p, .aboutHire p {
+  margin-left: 5px;
+  margin-bottom: 0;
+  width: 75%;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+}
+
+.aboutSkills {
+  display: inline-block;
+  margin: 2em 0;
+}
+
+.aboutSkills h3 {
+  margin: 2em 0 0.5em 5px;
+}
+
+.skillGroup span {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 1em;
+  letter-spacing: 2px;
+  line-height: 50px;
+  border: 2px solid black;
+  background-color: #efefef;
+  margin: 5px 5px;
+}
+
+
+.skillGroup span:hover,
+.skillGroup span:focus {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,94 @@
+/* Container holding the image ,text, and button */
+.container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 75vh;
+  margin: 0 0 2em 0;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.20);
+}
+
+/* Content */
+.content {
+  z-index: 2;
+  background-color: rgba(255,255,255,.90);
+  min-width: 290px;
+  width: 70%;
+  height: 40%;
+  padding: 17px 40px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+
+.title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: black;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 2rem;
+}
+
+.subtitle {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: black;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.content::after {
+  z-index: -1;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% - -18px);
+  height: calc(100% - -18px);
+  border: 2px solid white;
+  content: "";
+}
+
+/* text & button position */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottomCenter {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  height: 3rem;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* desktop settings */
+@media (min-width: 800px) {
+  .container {
+    height: 50vh;
+  }
+
+  .content {
+    max-width: 700px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1.3em;
+  }
+
+}

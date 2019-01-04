@@ -1,0 +1,25 @@
+.container {
+  text-align: center;
+}
+
+/*.container button {
+  border: 1px solid hotpink;
+  padding: 16px;
+  background-color: green;
+  font: inherit;
+  color: white;
+}
+
+.container button:hover {
+  background-color: lightgree;
+  color: black;
+}
+
+.container button.Red {
+  background-color: hotpink;
+}
+
+.contianer button.Red:hover {
+  background-color: salmon;
+  color: black;
+}*/

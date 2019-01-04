@@ -1,0 +1,22 @@
+.cardBody {
+  padding: 10px 10px;
+  white-space: normal;
+}
+
+.date {
+  margin: 0;
+}
+
+.title {
+  margin-top: 0.5em;
+  height: 40px;
+}
+
+.cardText {
+  width: 100%;
+  height: 80px;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: left;
+  color: #505558;
+}

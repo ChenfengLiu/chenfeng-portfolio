@@ -1,0 +1,51 @@
+.contactForm {
+  margin-top: 2em;
+  width: 70%;
+}
+
+.contactName, .contactEmail, .contactSubject {
+  position: relative;
+  float: left;
+  width: 33.33%;
+}
+
+.contactName, .contactEmail {
+  padding-right: 2em;
+}
+
+form p {
+  display: block;
+  margin: 0 0 3em 0;
+}
+
+.contactMessage {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+p input, p textarea {
+  font-size: 1.2em;
+  width: 100%;
+  padding: 1em 0.75em 0.5em;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+label {
+  z-index: 2;
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: block;
+  padding-left: 5px;
+  padding-right: 1px;
+  background-color: white;
+  line-height: 1;
+  letter-spacing: 4px;
+}
+
+form a {
+  cursor: pointer;
+}

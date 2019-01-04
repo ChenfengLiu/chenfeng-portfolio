@@ -1,0 +1,13 @@
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardList:after {
+  content: '';
+  flex: 1 0 280px;
+  min-width: 280px;
+  max-width: 540px;
+  margin: 20px 10px;
+}
