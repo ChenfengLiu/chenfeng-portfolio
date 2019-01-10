@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Aux from '../aux/Aux';
+import AuxComponent from '../auxComponent/AuxComponent';
 import classes from './Layout.css';
 import Navbar from '../../components/navbar/Navbar';
 import SideDrawer from '../../components/navbar/sideDrawer/SideDrawer';
@@ -23,7 +23,7 @@ class Layout extends Component {
 
   render() {
     return (
-      <Aux>
+      <AuxComponent>
         <div className={classes.navbarWrapper}>
           <Navbar drawerToggleClicked={this.sideDrawerToggleHandler} />
         </div>
@@ -34,7 +34,7 @@ class Layout extends Component {
         <main className={classes.content}>
           {this.props.children}
         </main>
-      </Aux>
+      </AuxComponent>
     )
   }
 }
