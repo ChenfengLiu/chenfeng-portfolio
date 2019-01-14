@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../lib/banner/Banner';
 import classes from '../../stylesheets/pages/About.css';
 
-const About = ({skillsLang, skillsAPIs, skillsWebTools, skillsArtTools}) => (
+const About = ({skillsLang, skillsAPIs, skillsNodeModules, skillsWebTools, skillsArtTools}) => (
   <div>
     <div className={classes.aboutBanner}>
       <Banner title={"About Chenfeng"}
@@ -27,6 +27,8 @@ const About = ({skillsLang, skillsAPIs, skillsWebTools, skillsArtTools}) => (
         <Chip skills={skillsLang} />
         <h3>Frameworks and APIs</h3>
         <Chip skills={skillsAPIs} />
+        <h3>Node Modules and Libraries</h3>
+        <Chip skills={skillsNodeModules} />
         <h3>DevOps</h3>
         <Chip skills={skillsWebTools} />
         <h3>Art and 3D</h3>
@@ -43,9 +45,10 @@ const About = ({skillsLang, skillsAPIs, skillsWebTools, skillsArtTools}) => (
 );
 
 About.defaultProps = {
-  skillsLang: ['Java', 'Javascript', 'HTML', 'CSS', 'C', 'C#', 'English', 'Chinese'],
-  skillsAPIs: ['MEAN stack', 'React.js', 'Node.js', 'Meteor.js', 'Bootstrap', 'WebGL', 'Reaction Commerce'],
-  skillsWebTools: ['Webpack', 'Babel', 'npm', 'Docker', 'Kubernetes', 'CircleCI', 'Google Kubernetes Engine', 'Firebase'],
+  skillsLang: ['Java', 'Javascript', 'HTML', 'CSS', 'C', 'English', 'Chinese'],
+  skillsAPIs: ['MEAN stack', 'React.js', 'Angular', 'Node.js', 'Express.js', 'Meteor.js', 'Bootstrap', 'WebGL', 'Reaction Commerce'],
+  skillsNodeModules: ['JQuery', 'D3',  'Sequelize', 'mssql', 'Exceljs', 'Officegen'],
+  skillsWebTools: ['Webpack', 'Babel', 'npm', 'Docker', 'Kubernetes', 'Jenkins', 'Google Kubernetes Engine', 'Firebase'],
   skillsArtTools: ['Photoshop', 'Illustrator', 'Solidworks', 'Fusion360', 'Cura']
 };
 
