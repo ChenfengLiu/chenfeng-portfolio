@@ -1,8 +1,6 @@
 import React from 'react';
 
-import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
-import FaGooglePlusSquare from 'react-icons/lib/fa/google-plus-square';
-import FaGithubSquare from 'react-icons/lib/fa/github-square';
+import { FaLinkedin, FaGooglePlusSquare, FaGithubSquare } from 'react-icons/fa';
 import classes from '../../stylesheets/pages/Footer.css';
 
 
@@ -12,7 +10,7 @@ const Footer = () => (
       <div className={classes.icons}>
         <a className={classes.iconWrapper}
           href="https://www.linkedin.com/in/chenfeng-liu-work">
-          <FaLinkedinSquare className={classes.icon} />
+          <FaLinkedin className={classes.icon} />
         </a>
         <a className={classes.iconWrapper}
           href="https://github.com/ChenfengLiu">
