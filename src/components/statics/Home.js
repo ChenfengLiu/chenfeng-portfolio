@@ -17,7 +17,7 @@ class Home extends Component {
     this.downloadButton.disabled = true;
     // Create a reference with an initial file path and name
     let storage = firebase.storage();
-    let resumeReference = storage.ref('2018_02_Resume.pdf');
+    let resumeReference = storage.ref('2019_01_Resume.pdf');
     // Get the download URL
     resumeReference.getDownloadURL().then( url => {
       // download using axios
