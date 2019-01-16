@@ -29,6 +29,14 @@ const CardsData = [
     "text": "I made my own 3D printer. Most parts of this printer is made of plywood and 3D printed parts.",
     "image": "card-3dp.jpg",
     "date": "Feb 12 2018"
+  },
+  {
+    "id": "3",
+    "category": "Work",
+    "title": "Apply D3 to your Everyday Life",
+    "text": "I learned D3 in a project. It is a powerful tool if you want to make your own visualizations.",
+    "image": "card-d3.jpg",
+    "date": "Jan 16 2018"
   }
 ];
 
@@ -38,8 +46,8 @@ class ProjectBlogs extends Component {
     cards: CardsData
   }
 
-  projectSelectedHandler = ( id ) => {
-    this.props.history.push( '/projects/' + id );
+  projectSelectedHandler = (id) => {
+    this.props.history.push('/projects/' + id);
     this.scrollUp();
     // console.log(this.props.history);
   }
@@ -49,7 +57,7 @@ class ProjectBlogs extends Component {
   }
 
   render() {
-    let projects = this.state.cards.map( card => {
+    let projects = this.state.cards.map(card => {
       return (
         <Card
           details={card}

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 import LightGallery from '../../../lib/lightGallery/LightGallery';
-// import CustomPhoto from '../../../lib/lightGallery/CustomPhoto';
-// import SelectedImage from '../../../lib/lightGallery/SelectedImage';
-import classes from './ProjectDetailHeader.css';
+import classes from './Project3DPrinter.css';
 
 const photos0 = [
   { src: require('../../../../images/project/my-3d-printer/1.JPG'), width: 5, height: 3 },
@@ -39,7 +37,7 @@ const photos5 = [
   { src: require('../../../../images/project/my-3d-printer/10.jpg'), width: 4, height: 3 },
 ];
 
-class ProjectDetailHeader extends Component {
+class Project3DPrinter extends Component {
 
   render() {
     return (
@@ -205,4 +203,4 @@ class ProjectDetailHeader extends Component {
   }
 };
 
-export default ProjectDetailHeader;
+export default Project3DPrinter;
