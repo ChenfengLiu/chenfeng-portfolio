@@ -18,7 +18,7 @@ const photos2 = [
 ];
 
 
-class ProjectDetailHeader extends Component {
+class ProjectPortfolio extends Component {
 
   render() {
     return (
@@ -64,10 +64,9 @@ class ProjectDetailHeader extends Component {
             <LightGallery photos={photos2} />
           </div>
         </section>
-        <hr />
       </div>
     );
   }
 };
 
-export default ProjectDetailHeader;
+export default ProjectPortfolio;

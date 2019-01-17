@@ -8,7 +8,7 @@ import Banner from '../lib/banner/Banner';
 class Home extends Component {
 
   componentDidMount() {
-    console.log('[Home.js] Inside componentDidMount()');
+    // console.log('[Home.js] Inside componentDidMount()');
   }
 
   handleDownload() {
