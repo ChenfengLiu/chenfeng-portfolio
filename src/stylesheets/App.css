@@ -147,3 +147,23 @@
 :global(.svg-container path) {
   stroke: black;
 }
+
+/* Gradient Rect */
+
+:global(.stop-1) {
+  /* stop-color: #0cebeb; */
+  stop-color: #78ffd6;
+}
+
+:global(.stop-2) {
+  /* stop-color: #29ffc6; */
+  stop-color: #007991;
+}
+
+:global(.filled-gradient) {
+  fill: url(#mainGradient);
+}
+
+:global(rect.monthly-total-rect) {
+  cursor: pointer;
+}

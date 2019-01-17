@@ -19,18 +19,13 @@
   line-height: 16px;
 }
 
+
+/* D3 */
+
 .svgContainer {
   width: 889px; 
   height: 550px; 
   margin: auto;
-}
-
-.displayNone {
-  display: none;
-}
-
-.yAxisLableCls {
-  font-size: 15px;
 }
 
 .tick text {
@@ -48,56 +43,8 @@ div.tooltip {
   pointer-events: none;
 }
 
-/* Gradient Rect */
-
-rect.FSLI-Group-Bar {
-  cursor: pointer;
-}
-
-.stop-1 {
-  /* stop-color: #E669A2; */
-  stop-color: #F3BE26;
-}
-
-.stop-2 {
-  /* stop-color: #000000; */
-  stop-color: orangered;
-}
-
-.filled-gradient {
-  fill: url(#mainGradient);
-}
-
-rect#total-fsli-rect {
-  cursor: pointer;
-}
-
-/* path {
-  stroke: hotpink;
-} */
-
 line {
   stroke: gray;
-}
-
-line#limit {
-  stroke: rgb(224, 114, 71);
-  stroke-width: 3;
-  stroke-dasharray: 3 6;
-}
-
-.grid path {
-  stroke-width: 0;
-}
-
-.grid .tick line {
-  stroke: #9FAAAE;
-  stroke-opacity: 0.3;
-}
-
-text.divergence {
-  font-size: 14px;
-  fill: #2F4A6D;
 }
 
 text.value {
@@ -109,36 +56,15 @@ text.title {
   font-weight: 600;
 }
 
-text.label {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-text.FSLI_Group_Total {
-  font-size: 1rem;
-}
-
-/* FSLI-Group Waterfall Graph */
-
+/* Waterfall Graph */
 line.connector {
   stroke: black;
   stroke-width: 1;
 }
 
-.positive rect {
-  fill: #F3BE26;
-}
-
-.negative rect {
-  fill: orangered;
-}
-
-.total rect {
-  fill: steelblue;
-}
-
-.back-button rect,
-.common-size-button rect {
+/* Back Button */
+.back-button rect, {
   fill: steelblue;
   cursor: pointer;
 }
+
