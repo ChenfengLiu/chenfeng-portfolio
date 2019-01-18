@@ -6,12 +6,12 @@ import spendingsDataHelper from './SpendingsDataHelper';
 
 class SpendingsGraph extends Component {
     componentDidMount() {
-        console.log("[SpendingsGraph] componentDidMount: ", this.props.spendings);
+        // console.log("[SpendingsGraph] componentDidMount: ", this.props.spendings);
         this.createGraph(this.props.spendings);
     }
 
     componentDidUpdate() {
-        console.log("[SpendingsGraph] componentDidUpdate: ", this.props.spendings);
+        // console.log("[SpendingsGraph] componentDidUpdate: ", this.props.spendings);
         this.createGraph(this.props.spendings);
     }
 
@@ -273,7 +273,7 @@ class SpendingsGraph extends Component {
         let xTicks = svg.selectAll(".x-axis .tick")
             .style('cursor', 'pointer')
             .on('click', (category) => {
-                console.log("x axis tick click", category);
+
                 if (category === 'Total') return;
                 // Step 1: remove waterfall rect mouse events
                 let waterfall_rects_selection = svg.selectAll('.Waterfall-Bar');
@@ -288,7 +288,6 @@ class SpendingsGraph extends Component {
 
                 // Step 2: prepare data for bar chart
                 let bar_chart_data = spendingsDataHelper.prepareDataForBarChart(spendingsData, month, category);
-                console.log(bar_chart_data);
 
                 // Step 3: create bar chart
                 this.createBarChart(bar_chart_data, month, category, svg, chart, xScale, yScale, width, height, barGroups, margin, colors);

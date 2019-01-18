@@ -43,7 +43,6 @@ const spendingsDataHelper = {
             cumulative = 0;
         }
 
-        console.log(stackedData);
         return {
             Ymax: Ymax,
             data: stackedData,
@@ -57,7 +56,6 @@ const spendingsDataHelper = {
         let waterfall_data = [];
 
         for (let key in month_data.all_catagories) {
-            console.log(key);
             let obj = {};
             obj.name = key;
             obj.start = cumulative;
@@ -75,7 +73,6 @@ const spendingsDataHelper = {
             value: cumulative,
         });
 
-        console.log("month data: ", month_data);
         return {
             Ymax: cumulative,
             data: waterfall_data
