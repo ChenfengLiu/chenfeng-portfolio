@@ -45,10 +45,10 @@ const About = ({skillsLang, skillsAPIs, skillsNodeModules, skillsWebTools, skill
 );
 
 About.defaultProps = {
-  skillsLang: ['Java', 'Javascript', 'HTML', 'CSS', 'C', 'English', 'Chinese'],
+  skillsLang: ['Java', 'Javascript', 'HTML', 'CSS', 'Python', 'C', 'English', 'Chinese'],
   skillsAPIs: ['MEAN stack', 'React.js', 'Angular', 'Node.js', 'Express.js', 'Meteor.js', 'Bootstrap', 'WebGL', 'Reaction Commerce'],
   skillsNodeModules: ['JQuery', 'D3',  'Sequelize', 'mssql', 'Exceljs', 'Officegen'],
-  skillsWebTools: ['Webpack', 'Babel', 'npm', 'Docker', 'Kubernetes', 'Jenkins', 'Google Kubernetes Engine', 'Firebase'],
+  skillsWebTools: ['Git', 'Webpack', 'Babel', 'npm', 'Docker', 'Kubernetes', 'Jenkins', 'Google Kubernetes Engine', 'Firebase'],
   skillsArtTools: ['Photoshop', 'Illustrator', 'Solidworks', 'Fusion360', 'Cura']
 };
 
