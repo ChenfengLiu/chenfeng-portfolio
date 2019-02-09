@@ -57,7 +57,7 @@ class PunchCard extends Component {
     console.log(weeklyCommits);
   }
 
-  getRepoCommits = (repoName: string) => {
+  getRepoCommits = (repoName) => {
     const repoUrl = 'https://api.github.com/repos/ChenfengLiu/' + repoName + '/stats/participation'
     axios({
       url: repoUrl,

@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import classes from '../stylesheets/containers/playground.css';
 import Banner from '../components/lib/banner/Banner';
 // import BurgerBuilder from '../containers/BurgerBuilder/BurgerBuilder';
-import PunchCard from '../components/playground/punchCard/PunchCard';
+// import PunchCard from '../components/playground/punchCard/PunchCard';
+import SnakeGame from '../components/playground/snakeGame/SnakeGame';
 
 class Playground extends Component {
 
@@ -21,7 +22,11 @@ class Playground extends Component {
         }
 
         {
-          <PunchCard />
+          // <PunchCard />
+        }
+        
+        {
+          <SnakeGame />
         }
       </div>
     );

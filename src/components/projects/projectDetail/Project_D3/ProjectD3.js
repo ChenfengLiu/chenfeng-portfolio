@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-import LightGallery from '../../../lib/lightGallery/LightGallery';
 import classes from './ProjectD3.css';
-
 import SpendingsGraph from './SpendingsGraph';
 import spendings from './Spendings';
 

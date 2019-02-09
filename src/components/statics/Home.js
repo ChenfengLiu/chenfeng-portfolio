@@ -12,14 +12,14 @@ class Home extends Component {
   }
 
   handleDownload() {
-    if(this.downloadButton.disabled === true) return;
+    if (this.downloadButton.disabled === true) return;
     this.downloadButton.innerHTML = "... loading";
     this.downloadButton.disabled = true;
     // Create a reference with an initial file path and name
     let storage = firebase.storage();
     let resumeReference = storage.ref('2019_01_Resume.pdf');
     // Get the download URL
-    resumeReference.getDownloadURL().then( url => {
+    resumeReference.getDownloadURL().then(url => {
       // download using axios
       axios({
         url: url,
@@ -27,7 +27,7 @@ class Home extends Component {
         responseType: 'blob',
         onDownloadProgress: (progressEvent) => {
           const val = Math.round(progressEvent.loaded / progressEvent.total * 100);
-          if(val === 100) {
+          if (val === 100) {
             this.downloadButton.innerHTML = "download resume";
             this.downloadButton.disabled = false;
           }
@@ -35,7 +35,7 @@ class Home extends Component {
       }).then(response => {
         // on response download to browser
         const url = window.URL.createObjectURL(new Blob([response.data]));
-	console.log("[home] response data and generated url: ", response.data, url);
+        // console.log("[home] response data and generated url: ", response.data, url);
         const link = document.createElement('a');
         link.href = url;
         link.setAttribute('download', 'Chenfeng_Resume.pdf');
@@ -43,7 +43,7 @@ class Home extends Component {
         link.click();
         document.body.removeChild(link); //remove the link when done
       });
-    }).catch(function(error) {
+    }).catch(function (error) {
       // catch errors
       switch (error.code) {
         case 'storage/object_not_found':
@@ -68,12 +68,12 @@ class Home extends Component {
     return (
       <div>
         <div className="home-banner">
-           <Banner title={"I'm Chenfeng"}
-             subTitle={'creative front-end developer'}
-             showButton={true}
-             buttonText={'view projects'}
-             buttonLink={'projects'}
-             image={'chenfeng-sea.png'}/>
+          <Banner title={"I'm Chenfeng"}
+            subTitle={'creative front-end developer'}
+            showButton={true}
+            buttonText={'view projects'}
+            buttonLink={'projects'}
+            image={'chenfeng-sea.png'} />
         </div>
 
         <div className="home-content">
