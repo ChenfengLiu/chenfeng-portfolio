@@ -17,7 +17,7 @@ class Home extends Component {
     this.downloadButton.disabled = true;
     // Create a reference with an initial file path and name
     let storage = firebase.storage();
-    let resumeReference = storage.ref('2019_01_Resume.pdf');
+    let resumeReference = storage.ref('2019_03_Resume.pdf');
     // Get the download URL
     resumeReference.getDownloadURL().then(url => {
       // download using axios
@@ -69,7 +69,7 @@ class Home extends Component {
       <div>
         <div className="home-banner">
           <Banner title={"I'm Chenfeng"}
-            subTitle={'creative front-end developer'}
+            subTitle={'creative application developer'}
             showButton={true}
             buttonText={'view projects'}
             buttonLink={'projects'}
