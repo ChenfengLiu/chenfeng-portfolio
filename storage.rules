@@ -1,6 +1,6 @@
 service firebase.storage {
   match /b/{bucket}/o {
-    match /2019_01_Resume.pdf {
+    match /2019_03_Resume.pdf {
       allow get;
     }
   }
